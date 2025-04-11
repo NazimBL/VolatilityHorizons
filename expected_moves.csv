@@ -1,0 +1,16 @@
+ticker,timeframe,expected_move,iv
+SPY,daily,2.78,12.59
+SPY,weekly,29.7,34.15
+SPY,monthly,41.65,30.48
+AAPL,weekly,16.46,50.51
+AAPL,monthly,23.57,47.56
+QQQ,daily,2.34,12.48
+QQQ,weekly,29.25,39.24
+QQQ,monthly,39.48,34.82
+MSFT,weekly,20.35,33.23
+MSFT,monthly,34.15,35.47
+TSLA,weekly,37.92,93.28
+TSLA,monthly,50.75,80.34
+TLT,daily,0.43,12.4
+TLT,weekly,3.66,25.66
+TLT,monthly,5.2,23.23

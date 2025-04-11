@@ -1,0 +1,47 @@
+//@version=5
+indicator("Expected Moves Overlay (Auto)", overlay=true)
+
+plot(syminfo.ticker == "SPY" ? 536.72 : na, title="SPY_daily_upper", color=color.red, linewidth=1)
+plot(syminfo.ticker == "SPY" ? 531.16 : na, title="SPY_daily_lower", color=color.red, linewidth=1)
+
+plot(syminfo.ticker == "SPY" ? 563.64 : na, title="SPY_weekly_upper", color=color.purple, linewidth=1)
+plot(syminfo.ticker == "SPY" ? 504.24 : na, title="SPY_weekly_lower", color=color.purple, linewidth=1)
+
+plot(syminfo.ticker == "SPY" ? 575.59 : na, title="SPY_monthly_upper", color=color.orange, linewidth=1)
+plot(syminfo.ticker == "SPY" ? 492.29 : na, title="SPY_monthly_lower", color=color.orange, linewidth=1)
+
+plot(syminfo.ticker == "AAPL" ? 214.61 : na, title="AAPL_weekly_upper", color=color.purple, linewidth=1)
+plot(syminfo.ticker == "AAPL" ? 181.69 : na, title="AAPL_weekly_lower", color=color.purple, linewidth=1)
+
+plot(syminfo.ticker == "AAPL" ? 221.72 : na, title="AAPL_monthly_upper", color=color.orange, linewidth=1)
+plot(syminfo.ticker == "AAPL" ? 174.58 : na, title="AAPL_monthly_lower", color=color.orange, linewidth=1)
+
+plot(syminfo.ticker == "QQQ" ? 456.74 : na, title="QQQ_daily_upper", color=color.red, linewidth=1)
+plot(syminfo.ticker == "QQQ" ? 452.06 : na, title="QQQ_daily_lower", color=color.red, linewidth=1)
+
+plot(syminfo.ticker == "QQQ" ? 483.65 : na, title="QQQ_weekly_upper", color=color.purple, linewidth=1)
+plot(syminfo.ticker == "QQQ" ? 425.15 : na, title="QQQ_weekly_lower", color=color.purple, linewidth=1)
+
+plot(syminfo.ticker == "QQQ" ? 493.88 : na, title="QQQ_monthly_upper", color=color.orange, linewidth=1)
+plot(syminfo.ticker == "QQQ" ? 414.92 : na, title="QQQ_monthly_lower", color=color.orange, linewidth=1)
+
+plot(syminfo.ticker == "MSFT" ? 408.8 : na, title="MSFT_weekly_upper", color=color.purple, linewidth=1)
+plot(syminfo.ticker == "MSFT" ? 368.1 : na, title="MSFT_weekly_lower", color=color.purple, linewidth=1)
+
+plot(syminfo.ticker == "MSFT" ? 422.6 : na, title="MSFT_monthly_upper", color=color.orange, linewidth=1)
+plot(syminfo.ticker == "MSFT" ? 354.3 : na, title="MSFT_monthly_lower", color=color.orange, linewidth=1)
+
+plot(syminfo.ticker == "TSLA" ? 290.23 : na, title="TSLA_weekly_upper", color=color.purple, linewidth=1)
+plot(syminfo.ticker == "TSLA" ? 214.39 : na, title="TSLA_weekly_lower", color=color.purple, linewidth=1)
+
+plot(syminfo.ticker == "TSLA" ? 303.06 : na, title="TSLA_monthly_upper", color=color.orange, linewidth=1)
+plot(syminfo.ticker == "TSLA" ? 201.56 : na, title="TSLA_monthly_lower", color=color.orange, linewidth=1)
+
+plot(syminfo.ticker == "TLT" ? 87.32 : na, title="TLT_daily_upper", color=color.red, linewidth=1)
+plot(syminfo.ticker == "TLT" ? 86.46 : na, title="TLT_daily_lower", color=color.red, linewidth=1)
+
+plot(syminfo.ticker == "TLT" ? 90.55 : na, title="TLT_weekly_upper", color=color.purple, linewidth=1)
+plot(syminfo.ticker == "TLT" ? 83.23 : na, title="TLT_weekly_lower", color=color.purple, linewidth=1)
+
+plot(syminfo.ticker == "TLT" ? 92.09 : na, title="TLT_monthly_upper", color=color.orange, linewidth=1)
+plot(syminfo.ticker == "TLT" ? 81.69 : na, title="TLT_monthly_lower", color=color.orange, linewidth=1)
