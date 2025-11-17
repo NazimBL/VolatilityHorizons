@@ -2,14 +2,14 @@
 Automated generation of TradingView Pine Script overlays for option chain expected moves, combining fundamental data analysis with technical chart visualization
 ![Example Overlay](https://via.placeholder.com/800x400.png?text=Screenshot+Coming+Soon) *Example visualization placeholder*
 
-## ✨ Features
+## Features
 - Multi-timeframe support (Daily/Weekly/Monthly)
 - Automatic price synchronization via Yahoo Finance
 - Customizable color schemes
 - Dynamic ticker filtering
 - CSV-based move configuration
 
-## 🚀 Quick Start
+## Quick Start
 ```bash
 # Clone repository
 git clone https://github.com/YOURNAME/REPO_NAME.git
@@ -23,7 +23,7 @@ AAPL,daily,2.5
 TSLA,weekly,15.3
 ```
 
-## ⚙️ Configuration
+## Configuration
 1. Edit `expected_moves.csv`:
 ```csv
 ticker,timeframe,expected_move
@@ -41,7 +41,7 @@ python main.py
 - Copy/paste generated code
 - Add to chart from 'Indicators' list
 
-## 🎨 Customization
+## Customization
 **Color Schemes:**
 ```python
 # In main.py, modify the color_map:
