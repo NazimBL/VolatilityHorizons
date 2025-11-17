@@ -1,10 +1,10 @@
 import pandas as pd
 import yfinance as yf
 
-# Load your expected moves CSV
+# Load the expected moves CSV
 df = pd.read_csv("expected_moves.csv")
 
-# Get live prices for each unique ticker
+# Get rt prices for each unique ticker
 base_prices = {}
 for ticker in df['ticker'].unique():
     try:
@@ -12,14 +12,14 @@ for ticker in df['ticker'].unique():
     except:
         base_prices[ticker] = None
 
-# Start building the Pine Script
+# building Pine Script
 pine_lines = [
     "//@version=5",
     'indicator("Expected Moves Overlay (Auto)", overlay=true)',
     ""
 ]
 
-# Define color map for timeframes
+# color map for timeframes
 color_map = {'daily': 'color.red', 'weekly': 'color.purple', 'monthly': 'color.orange'}
 
 # Generate dynamic plot() lines
@@ -47,4 +47,5 @@ pine_script = "\n".join(pine_lines)
 with open("expected_moves.pine", "w") as f:
     f.write(pine_script)
 
-print("✅ Pine Script saved to expected_moves.pine")
+print(" Pine Script saved to expected_moves.pine")
+
