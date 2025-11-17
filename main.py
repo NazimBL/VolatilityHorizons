@@ -2,10 +2,10 @@ import yfinance as yf
 from datetime import datetime
 import numpy as np
 
-# ETFs with daily expiries
+# ETFs ( 0DTEs)
 daily_expiry_etfs = ['SPY', 'QQQ', 'IWM', 'TLT', 'DIA']
 
-# Your custom ticker list
+# custom ticker list
 ticker_list = ['SPY', 'AAPL', 'QQQ', 'MSFT', 'TSLA', 'TLT']
 
 def get_expected_move_with_iv(ticker):
@@ -91,7 +91,7 @@ for r in results:
             base_time['iv'] = r[timeframe].get('iv')
             flattened.append(base_time)
 
-# Save to CSV
+
 df = pd.DataFrame(flattened)
 df.to_csv("expected_moves.csv", index=False)
 print("Saved expected moves to expected_moves.csv")
@@ -133,4 +133,5 @@ plt.legend(by_label.values(), by_label.keys())
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
 """
