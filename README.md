@@ -1,6 +1,5 @@
 # VolatilityHorizons
 Automated generation of TradingView Pine Script overlays for option chain expected moves, combining fundamental data analysis with technical chart visualization
-![Example Overlay](https://via.placeholder.com/800x400.png?text=Screenshot+Coming+Soon) *Example visualization placeholder*
 
 ## Features
 - Multi-timeframe support (Daily/Weekly/Monthly)
